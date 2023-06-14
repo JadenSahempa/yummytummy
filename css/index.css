@@ -1,0 +1,232 @@
+body {
+  background-color: black;
+
+}
+
+.Menu {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 5px;
+}
+
+/* Untuk tombol navigasi */
+nav {
+  background-color: #333;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+.container {
+  background-image: url(../gambar/makanan1.avif);
+  height: 400px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+
+
+h1 {
+  color: orange;
+  font-family: sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 6px black;
+  position: relative;
+  font-weight: bold;
+  font-size: 100px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 50%;
+  }
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+
+}
+
+h1:hover::after {
+  transform: scaleX(1);
+}
+
+p {
+  text-align: left;
+}
+
+.container1 {
+  background-image: url(../gambar/makanan2.avif);
+  height: 400px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+}
+
+
+
+.quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 6px black;
+  transition: all 0.3s ease;
+}
+
+.quote:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 12px black;
+}
+
+@media (max-width: 768px) {
+  .quote {
+    font-size: 24px;
+  }
+}
+
+
+
+/*chia pe batas kode*/
+
+.container_resep {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: center;
+}
+
+.recipe {
+  background-color: #f2f2f2;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  width: 300px;
+
+}
+
+.recipe img {
+  max-width: 100%;
+  max-height: 100%;
+  height: 300px;
+  width: 500px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.recipe img:hover {
+  transform: scale(1.1);
+}
+
+.recipe h2 {
+  background-color: #FFE1A0;
+  color: black;
+  font-size: 24px;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.recipe p {
+  padding: 10px;
+  text-align: justify;
+}
+
+.recipe a {
+  background-color: #FFE1A0;
+  color: black;
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.recipe a:hover {
+  background-color: #666;
+}
+
+@media only screen and (max-width: 600px) {
+  .recipe {
+    width: 100%;
+  }
+}
+
+/*chia pe batas kode*/
+
+.aboutustulisan {
+  font-size: 25px;
+  color: white;
+  padding: 10px;
+  margin-top: 25px;
+}
+
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: center;
+}
+
+.photo {
+  max-width: 100%;
+  max-height: 100%;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo:hover {
+  transform: scale(1.1);
+}
+
+.about {
+  margin: 10px;
+  width: 300px;
+}
+
+
+
+h3 {
+  color: white
+}
+
+.A {
+  text-decoration: none;
+  color: white
+}
